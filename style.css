@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.section {
+  min-height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+.section.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Countdown */
+#timer {
+  font-size: 3rem;
+}
+
+/* Cake */
+#cake-container {
+  width: 360px;
+}
+#cake {
+  width: 100%;
+}
+#cake-video {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Gift */
+#gift {
+  width: 160px;
+  height: auto;
+}
+
+/* Animations */
+#animations {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.balloon, .confetti {
+  position: absolute;
+  animation: floatUp 4s linear forwards;
+}
+
+.balloon {
+  width: 40px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.confetti {
+  width: 8px;
+  height: 8px;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(-100px); opacity: 0; }
+}
+
+/* LETTER BACKGROUND */
+.letter-bg {
+  background: url("assets/starry_night.png") center center no-repeat;
+  background-size: contain;        /* SHOW FULL IMAGE */
+  background-color: #0b1d3a;          /* fill empty space */
+}
+
+
+.letter-box {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+}
+
+#letterText {
+  white-space: pre-line;
+  font-size: 1.3rem;
+}
+
+.final-line {
+  margin-top: 20px;
+  font-style: italic;
+}
