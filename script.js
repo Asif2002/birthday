@@ -21,7 +21,6 @@ const countdown = setInterval(() => {
     openBtn.classList.remove("hidden");
   }
 }, 1000);
-
 // START MUSIC + MOVE ON
 openBtn.onclick = () => {
   audio.play();
